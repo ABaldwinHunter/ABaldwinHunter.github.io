@@ -1,45 +1,4 @@
-[Week 1 Home](./)
 
-# U1.W1: Cultural Blog: Chefs in the Kitchen
-
-## Learning Competencies
-- Consider DBC's culture and approach to learning
-- Predict how you will react to DBC's approach
-
-## Summary
-
-Dev Bootcamp does not simply try to teach people how to program. We also focus on the mind and body. In Phase 0 you will be introduced to various cultural topics you'll be expected to be familiar with or open to learning more about at Dev Bootcamp. Similarly to the technical blogs, you should try to time-box (limit yourself) to spending an hour on it.
-
-Note: This week's might be a little long if you watch the whole video, so watch what you need. You may want to skip the QA section at the end if you're short on time.
-
-## Release 0: Prepare your blog
-**Using ONLY your command line**
-
-- Navigate to your `[USERNAME].github.io/blog` directory
-- Add a new file called `c1-chefs-kitchen.md`
-- Copy the markdown template from [blog-template.md](blog-template.md) (in this repository) into your `c1-chefs-kitchen.md` file.
-
-
-## Release 1: Kitchen vs. Table
-Watch [Shereef's Fireside Chat](http://vimeo.com/85001014). This chat is over an hour long, so watch the parts your interested in and make sure to leave time for writing your blog!
-
-## Release 2: Write
-
-Based on the video, what's your take on the DBC experience? What is your impression of DBC? How do you see yourself engaging with this type of culture?
-Have your expectations of DBC changed? If so, how? Are you excited to participate in this kind of learning environment? Does it make you nervous?
-
-Talk about what came up for you and anything you want in addition to the questions above.
-
-## Release 3: Publish
-
-Don't forget to add, commit, and push your changes to make them live on your github.io site. Double-check that you can see your page when you visit:
-
-[USERNAME].github.io/blog/c1-chefs-kitchen.md
-
-## Release 4: Promote
-Now it's time to show off your work and share your knowledge with your cohortmates using Twitter!
-
-Tweet your blog post using **#DBCFireside**.
 <!-- This template is in markdown, not html, so
   it will not render beautifully when you copy and
   paste it into your github.io site, but it will at
@@ -53,17 +12,32 @@ Tweet your blog post using **#DBCFireside**.
   simple, so you can just feel free to type. =) -->
 
 
-# Title
-#### Subtitle
-#### Date
+Kitchen vs. Restaurant: First Reflections on DBC Culture after Week 1
+September 21, 2014
 
-Paragraph 1
+I am excited and scared about plunging into the DBC kitchen... and happy that I'm scared. Putting on a chef's hat for the first time is nervewracking. Sitting down to a table is not.
 
-Paragraph 2
+Dev Bootcamp is unique in its energy and down-to-earthyness. I like its collaborative spirit and open-minded appreciation for ideas and contribution at any level. There are two environments where I've experienced this mentality recently: one is at a place called the Wild Bird Fund in NYC on the upper West side, which rehabilitates injured birds - which is lovely and awesome. The other is on the soccer field.
 
-Paragraph 3
+At WBF volunteers of all ages and backgrounds flock in to do everything from scrubbing cages to feeding nestlings to taking blood samples and running labwork. Folks come for different reasons, but there's no pay or even glory really - how great can you look while scrubbing bricks or de-lousing a pidgeon? People simply have a deep care for the birds and the community. All help is appreciated, and its given freely. 
 
-Add as many paragraphs as you want!!!
+The other time I have felt this sense of empowerment and being a cell of a larger organism is in my co-ed soccer league. This wasn't always the case though.
+
+In my soccer team for instance, I am not one of the best players, not even one of the better girls. I noticed that in some games, I would, as a teammate puts it generally, 'playing small.' You know, running around, but half hoping no one would notice or pass me the ball. I was afraid of making a mistake.
+
+But there was one game when no other girls showed up, and we had to play one man down (minimum of two girls per side). I knew that 1) I had to actually get involved and 2) simply by being there and having shown up, I had helped my team. Both realizations gave me confidence to just try. Sure, I botched a couple of passes and shots, but I also helped. We even won. And I got better from practice. 
+
+I know that the same is true in other areas of my life including Dev Bootcamp. At DBC I am also nervous about having my self-consciousness get in the way of my rolling up my sleeves and getting involved.
+
+Being committed to the creative kitchen mindset, plunging into the cold pool, is what I want. Signing up for this course is like putting myself on the plank :)
+
+So, I am a fan of DBC's philosophy and I hope that I strengthen my practice of confidence and humility, commitment to contributing to a community of learners, and gratitude for the knowledge others are sharing with me. 
+
+It's more fun to be part of a an organism than a lone cell. Looking forward to working with you guys and setting out on this set of challenges together! 
+
+
+
+
 
 
 
