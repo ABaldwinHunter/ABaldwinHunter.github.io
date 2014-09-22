@@ -36,13 +36,13 @@ Those are the basics. Remember that it's pretty easy to work with git and connec
 
 BASIC GIT COMMANDS
 
-git clone <url> #creates a new clone of your virtual GitHub repository in whatever folder you've navigated to via the command line
+git clone GitHub.url #creates a new clone of your virtual GitHub repository in whatever folder you've navigated to via the command line
 
-git remote add new-remote-name <url>   #lets you create a new remote, basically pointing you toward the GitHub site repository where you'd like to 'push' or submit your new, changed clones (feel like Dr. Frankenstein yet?)
+git remote add new-remote-name GitHub.url   #lets you create a new remote, basically pointing you toward the GitHub site repository where you'd like to 'push' or submit your new, changed clones (feel like Dr. Frankenstein yet?)
 
 git status #lets you see the status of what repository you're in, and what's been tracked as changed, and what changes have been prepped to be saved as a commit (this prep work is called 'staging' your changes)
 
-git add <name of changed file>' #preps pr 'stages' changes to be saved in a commit. Once you've staged a change, you can check by entering 'git status' again. The staged item should appear in yellow. Now it's ready to be saved in a commit via: 
+git add name.of.changed.file #preps pr 'stages' changes to be saved in a commit. Once you've staged a change, you can check by entering 'git status' again. The staged item should appear in yellow. Now it's ready to be saved in a commit via: 
 
 git commit -m "message describing your changes" #saves your changes in a new commit
 
