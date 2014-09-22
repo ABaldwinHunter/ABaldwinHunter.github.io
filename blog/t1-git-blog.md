@@ -11,11 +11,8 @@
   simple, so you can just feel free to type. =) -->
 
 
-Git and GitHub: the Basics
-The Simplicity of Git and Benefits of Version Control for Beginners
+Git and GitHub for beginners: the Software itself and a Virtual Hangout that Uses it 
 September 21, 2014
-
-GIT VS. GITHUB - THE SOFTWARE ITSELF AND A VIRTUAL HANGOUT/DROPBOX THAT USES IT
 
 WHAT IS GIT AND WHY WOULD I USE IT?
 
