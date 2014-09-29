@@ -2,6 +2,11 @@ html {
   background-color: #0099ff;
 }
 
+p {
+  text-indent: 25px;
+}
+
+
 a:hover {
   color: violet;
 }
@@ -14,21 +19,26 @@ h1 {
   position: absolute;
   top: 75px;
   width: 100%;
-  border-bottom: 2px solid black;
-  border-top: 2px solid black;
+  border-bottom: 2px solid blue;
+  border-top: 2px solid blue;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
 h3 {
   color: 000066;
+  text-align: center;
+  font-size: 30;
 }
 
 #new-title {
   position: absolute;
-  top: 180px;
+  top: 190px;
   border: none;
-  font-size: 20px;
+  font-size: 35px;
+  font-family: serif;
+  left: 40px;
+  color:;
 }
 
 #portrait {
@@ -44,27 +54,35 @@ h3 {
   font-family: Times;
   border: 5px solid blue;
   background-color: #ffffcc;
-  height: 700px;
+  height: auto;
   width: 65%;
   position: absolute;
-  top: 240px;
+  top: 260px;
   left: 19%;
   margin-bottom: 200px;
+  padding: 30px 30px 30px 30px;
   ;
+}
+
+#blog-name {
+  position: absolute;
+  top: 40px;
+  left: 45px;
+  color: blue;
 }
 
 #sky {
   position: fixed;
   top: 0px
-  right:3px;
-  width: 1063px;
+  right: 5px;
+  width: 98.5%;
   margin: 1px;
 }
 
 #new-date {
   position: absolute;
-  top: 180px;
-  left: 320px;
+  top: 170px;
+  left: 390px;
   border: none;
   font-size: 20px;
 }
@@ -86,3 +104,4 @@ h3 {
   top: 530px;
   left: 30px;
 }
+
