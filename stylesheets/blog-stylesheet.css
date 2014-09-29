@@ -1,5 +1,9 @@
 html {
-  background-color: #778899;
+  background-color: #0099ff;
+}
+
+a:hover {
+  color: violet;
 }
 
 h1 {
@@ -7,35 +11,78 @@ h1 {
   text-align: center;
   font-family: Times, serif;
   color: black;
-  position: fixed;
+  position: absolute;
+  top: 75px;
+  width: 100%;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-#navbar {
+h3 {
+  color: 000066;
+}
+
+#new-title {
+  position: absolute;
+  top: 180px;
+  border: none;
   font-size: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  position: fixed;
+}
+
+#portrait {
+  position: absolute;
+  top: 300px;
+  left: 40px;
+  height: 150px;
+  width: 140px;
+
 }
 
 #Article {
-  margin-left: auto;
-  margin-right: auto;
   font-family: Times;
-  display: inline block;
   border: 5px solid blue;
-  background-color: white;
-  height: 400px;
-  width: 200;
+  background-color: #ffffcc;
+  height: 700px;
+  width: 65%;
+  position: absolute;
+  top: 240px;
+  left: 19%;
+  margin-bottom: 200px;
   ;
+}
+
+#sky {
+  position: fixed;
+  top: 0px
+  right:3px;
+  width: 1063px;
+  margin: 1px;
+}
+
+#new-date {
+  position: absolute;
+  top: 180px;
+  left: 320px;
+  border: none;
+  font-size: 20px;
+}
+
+.icon {
+  height: 20px;
+  width: 25px;
+}
+
+.center {
+  text-align: center;
 }
 
 #contact_links {
   float: left;
   height: 200px;
   width 60px;
-}
-
-#related_links {
-  clear: both;
-  float: right;
+  position: absolute;
+  top: 530px;
+  left: 30px;
 }
