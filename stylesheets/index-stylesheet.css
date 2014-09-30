@@ -25,17 +25,12 @@ h1 {
   padding-bottom: 10px;
 }
 
-h3 {
-  color: 000066;
-  text-align: center;
-  font-size: 40;
-}
 
 
 #portrait {
   position: absolute;
   top: 250px;
-  left: 80px;
+  left: 95px;
   height: 200px;
   width:  200px;
 
@@ -56,8 +51,10 @@ h3 {
   margin: 1px;
 }
 
-.center {
+h3 .center {
   text-align: center;
+  padding-bottom: 5px;
+  color: #8e35ef;
 }
 
 #contact_links {
@@ -66,12 +63,13 @@ h3 {
   width 60px;
   position: absolute;
   top: 530px;
-  left: 80px;
+  left: 95px;
 }
 
 .icon {
   height: 40px;
   width: 40px;
+  margin: 0px;
 }
 
 #header {
@@ -94,16 +92,32 @@ h3 {
   }
 
 #footer { 
-  width: 98.5%;
+  width: 99%;
   height: 80px;
   top: 140px;
   text-align: center;
-  background-color: blue;
+  background-color: #6666cc;
   position: absolute;
   top: 1000px;
-  border-bottom-right-radius: 2px solid violet;
+  border-bottom-right-radius: 2px solid black;
   z-index: 1000;
   left: 15px;
+}
+
+#blog-posts {
+  position: absolute;
+  top: 300px;
+  left: 550px;
+  width: 400px;
+  height: 700px;
+  margin: 40px;
+}
+
+.new-post {
+  font-size: 30px;
+  color: blue;
+  margin-bottom: 40px;
+  text-decoration: none;
 }
 
 
