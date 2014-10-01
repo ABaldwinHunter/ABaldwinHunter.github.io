@@ -105,3 +105,12 @@ h3 {
   left: 30px;
 }
 
+#fixed {
+  position: fixed;
+  left: 0px;
+  top: 450px;
+  height: 200px;
+  width 60px;
+
+}
+

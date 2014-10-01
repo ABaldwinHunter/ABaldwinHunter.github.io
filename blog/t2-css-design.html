@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheet.css"/>
+  </head>
+  <body>
+    <img id="sky" src="https://scontent-b-iad.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/10363958_10152205200177761_1841719403353895080_n.jpg?oh=48f74fee470a79ee6acd31f07972e7fa&oe=54C041FB">
+    <img id="portrait" src="https://pbs.twimg.com/profile_images/511033278489317376/sU8Nlnn2_400x400.jpeg"/>
+    <h1 id="new-title">Absolute, Fixed and Relative Positioning</h1>
+    <h1 id="new-date">September 30, 2014</h1>
+    <div id="Article">
+      <h3>CSS Positioning: Nobody Freak Out</h3>
+      <p>When I first tried to navigate the realm of CSS positioning this week, I felt like someone driving stick shift for the first time... Who had also never seen a car before. In the array of new web design techniques we learned at DBC this week - how to link to images and other webpages, alter colors, and use pseudo selectors to make an image or link change when hovered over - positioning seemed less glamorous but much more complex. But like layers of cake beneathe the icing, it provides structure and is one of the most interesting parts! Here is a quick introduction to three basic types of positioning: relative, absolute and fixed. Before plunging in, here is a quick review of the DOM structure and static position:</p> 
+
+      <p>As you know, elements in HTML are structured like branches of a tree: one parent div (division) can branch into one or more 'child' divs, which can contain children of their own. The relationship between these elements is important for discussing relative positioning in CSS. </p>
+
+      <img src="http://cdn2.mos.techradar.futurecdn.net//Review%20images/Linux%20Format/Issue%20118/DOM%20tree%20inline2-580-90.jpg"/> 
+
+      <h3>Static Position: the Default</h3>
+      <p>First off, if you say nothing about position in the css, your elements will automatically have the position of "static" and a property called "display: block". "Display: block" simply means that they take up the entire block or horizontal space to their right on the page, even when they're not actually that wide.  No other elements are permitted to sit next to them, kind of like someone in quarantine, or that guy on the train that stowes a giant back in the seat next to him.</p>
+      <p>Since elements by default will populate the page top-down and left-right, a series of blocks (or 'divs', short for division) at the same level in the tree will look like the stack below:</p>
+
+      <img src="../blogimgs/staticrelativ-nochange.png"/>
+
+      <h3>Relative Positioning</h3>
+
+      <p>Relative positioning means that elements are positioned in relation to the parent element immediately behind them in the tree. For instance, when you tell an element to sit x pixels from the top, bottom, left or right, you're referring to the  edges of the parent element.</p>
+
+      <img src="../blogimgs/childdivbottom30pxrelativeposition.png"/>
+
+      <p>Notice that in the example above, the yellow child sits inside its parent. (In the HTML, this child (the yellow one) is nested one level inside of the div before it, kind of like the yellow one in this sentence.) It sits slightly above its parent div's bottom because of the "bottom: 30px" in the CSS code for #interior.</p>
+
+      <p>Without relative positioning, our yellow child would look like this:</p>
+      <img src="../blogimgs/childdiv,positionnotrelative.png"/>
+
+      <p>Note that simply specifying 'position: relative' for the child won't automatically postion it a certain way in relation to the parent. In the example above, if we don't add "bottom: 30px" after 'position relative", we get:</p>
+      <img src="../blogimgs/relativepositionbutnothingspecified.png"/>
+      <p>You can also make the parent div have contents that are text-align:center. Putting 'position: relative' just flips the switch.</p>
+
+
+      <h3>Absolute Positioning - Rogue Divs</h3>
+      <p>Absolute positioning detaches an element from the elements outside or next to it (while letting it keep its connection to its own children), and places it in relation to the page. Once you specify "position: absolute," you can indicate top: 20px, etc. to place your element in relation to the page borders. It will take its children elements with it. It's kind of like a parent fleeing with young ones to escape a war or other hazardous community. It's still on earth but no longer tied down to its other relatives or parents.</p>
+      <img src="../blogimgs/childrendivsareabsoluteparentrelative.png"/>
+      <p>As you can see in the example above, the sandwich children are all clumped together. The absolute position messes up their block-inline ways.</p>
+
+      <p>When an element has position "absolute," it will land in the upper left corner of page unless you tell it otherwise. In our sandwiches page below, making the main parent divs have position "absolute" overrides the display:block property (which should make them take up the entire bench width next to them), and makes it look like there's only one. (The three sets are sitting on top of one another.)</p>
+
+      <h3>Fixed Positioning</h3>
+      <p>Finally, in fixed positioning, an element is pinned to its position in the viewer/browser. Not only has it escaped from its parent (absolute) but also the earth entirely. It's out in the solar system - aka your web browser view. A fixed item stays frozen in place even as the rest of the page moves. (Try wiggling this text box around. Notice the contact icons fixed on the left of this page!)</p>
+      <p>What might fixed positioning be good for? Well, lots of things, including menu bars at the top of pages.</p>
+
+      <h3>A Few Additional Tips:</h3>
+        <ul>
+          <li>Make Background Divs Auto-fit contents; don't try to tell contents to Auto-fit Div</li>
+          <li>To organize information on your page, you'll probably want to divide the page into sections or divs, and then within each section have a series of images or types:
+
+          <p>Checkout the image and code below:</p>
+          <img src="../blogimgs/sandwichrelativeposition.png"/><p>(with HTML shown)</p>
+          <img src="./blogimgs/cssforrelativechildrenposition.png"/><p>(with CSS shown)</p>In my example, I have two panels of sandwiches:</p>
+          <p>As you can see, in the HTML there is a 'div' or (division) that has within it further division into three sandwich types. Each of these is surrounded by a border.</p>
+          <p>They look nice and organized now, but there are many ways chaos could be created. In this case, notice that I put the width: auto on the div. This made it automatically size correctly to fit its contents. This is very useful!</p>
+         <p>Originally I tried desperately to fit the contents to the div behind them, but to no avail. I thought that putting a parent div before a smaller branch in the html automatically made the daughter sit inside the parent, but this is not so. Basically, being a parent just gives the div a lower z value (that is, it sits further back into the page, and its children rest on top of it, popping out toward you).</p>
+       </ul>
+        <img src="http://nicolasgallagher.com/css-background-image-hacks/css-pseudo-background-position.png"/>
+
+      <p>Thanks for reading. I hope this gave you some idea of a few basic positioning strategies in CSS, and the difference between statis, relative, absolute and fixed positioning!</p>
+
+    
+    <div id="fixed">
+      <h3 class="center"><a href="#">About</></h3>          
+      <ul>
+        <li><a href="https://www.linkedin.com/profile/view?id=154112059&trk=nav_responsive_tab_profile_pic"><img class="icon" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzi7PuXbJ0QzHbG6hnuXC7Bj9NEDxTXOOj0xyoylFz8tElaL_5Y_PCdA"/>Linked In</a></li>
+        <li><a href="https://twitter.com/a_baldwinhunter"><img class="icon" src="https://pbs.twimg.com/profile_images/2284174758/v65oai7fxn47qv9nectx_400x400.png"/>Twitter</a></li>
+        <li><a href="https://github.com/ABaldwinHunter"><img class="icon" src="http://romnes.github.io/images/github.png"/>GitHub</a></li>
+        <li><a href="https://www.facebook.com/ashley.baldwinhunter"><img class="icon" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ64Er0HwlJqNAhgmaWnu3JOylUDFqd6Jy7FV1U-l4vH5qHnbyu">Facebook</a></li>
+      </ul>
+    </div>
+
+  </body>
+</html>
