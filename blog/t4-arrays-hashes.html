@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<link type="text/css" rel="stylesheet" href="stylesheets/blog-stylesheet.css"/>
+  </head>
+  <body>
+    <img id="sky" src="https://scontent-b-iad.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/10363958_10152205200177761_1841719403353895080_n.jpg?oh=48f74fee470a79ee6acd31f07972e7fa&oe=54C041FB">
+    <h1 id="blog-name">The Jolly Spider</h1>
+    <img id="portrait" src="https://pbs.twimg.com/profile_images/511033278489317376/sU8Nlnn2_400x400.jpeg"/>
+    <h1 id="Ruby: Arrays vs. Hashes">[New Entry Title]</h1>
+    <h1 id="October 5, 2014">[New Date]</h1>
+    <div id="Article">
+      <h3>Ruby: Arrays vs. Hashes</h3>
+      <p>So far what I’ve learned:</p>
+
+      <h3>Arrays</h3>
+      <p>Arrays are little collections of objects, which can be numbers or strings. Or even variables (but the variable will be pointing to the string or number or whatever that it represents). They have indices for their items, which start at 0. (the 0th position). You can do lots of things with arrays, like add them together, sort them, call a method that will tell you how many objects are in the array, etc.</p>
+
+      <p>You can even have arrays that have other arrays as objects, kind of like when a parent has kids and then some of the kids have their own. Kind of.</p>
+
+      <p>As far as technical or syntactical things go, arrays are pretty easy to make. In Ruby, you just write the name you’d like to give your array, and then =, then square brackets containing all of your objects, separated by a comma, - like so:</p>
+
+      <p>list_of_movies = [“The Shining”, “My Cousin Vinny”, “Harold and Maude”, “Ocean’s 11”]</p>
+
+      <p>Note that these objects are all strings and so appear in “”. Also note that the commas are outside of the string.</p>
+
+      <p>One more array:</p>
+
+      <p>numbers = [1, 4, 5, 39, 1, 0, -5]</p>
+      <p>This array has 7 objects, all numbers. It doesn’t matter that some are negative or that others repeat.</p>
+      <p>Arrays all have an ‘index’ which basically is just that the order of these items matters to them. If I call </p>
+
+      <p>Numbers[0]</p>
+
+      <p>It will return to me 1, which is in the 0th position. (Computers and mathematicians apparently begin counting at 0, not 1, kind of like buildings in European countries. Time for Americans to cross over and also switch to the metric system while we’re at it. ☺)</p>
+
+      <h3>Hashes</h3>
+
+      <p>So, then we have these very similar things called hashes.</p>  
+      <p>Hashes are like arrays, except that instead of having a numerical index of 0, 1, 2, 3, 4 … n for their objects, they can have other things be index keys.</p>
+      <p>This is useful for storing information. For instance, in our movie example above, we could write a hash that used movies as the index keys, and directors as the object. So we would get:</p>
+
+      <p>Movie_hash = {
+            <br>“The Shining” => “Stephen King”,</br>
+            <br>“My Cousin Vinny” =>  “”,</br>
+            <br>“Harold and Maude” => “”,</br>
+            <br>“Ocean’s 11” => “”</br>
+            }</p>
+  
+    <p>Notice where all of the commas and curly brackets are. These matter to Ruby. There are a couple of other ways to write new hashes, and there are different ways to add new key-value pairs.</p>
+    <p>But this is the basic idea. Now, when I call movie_hash(“The Shining”), I will get:</p> 
+
+    <p>“Stephen King” returned to me.</p> 
+    </div>
+    
+    <div id="contact_links">
+      <h3 class="center"><a href="#">About</></h3>          
+      <ul>
+        <li><a href="https://www.linkedin.com/profile/view?id=154112059&trk=nav_responsive_tab_profile_pic"><img class="icon" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzi7PuXbJ0QzHbG6hnuXC7Bj9NEDxTXOOj0xyoylFz8tElaL_5Y_PCdA"/>Linked In</a></li>
+        <li><a href="https://twitter.com/a_baldwinhunter"><img class="icon" src="https://pbs.twimg.com/profile_images/2284174758/v65oai7fxn47qv9nectx_400x400.png"/>Twitter</a></li>
+        <li><a href="https://github.com/ABaldwinHunter"><img class="icon" src="http://romnes.github.io/images/github.png"/>GitHub</a></li>
+        <li><a href="https://www.facebook.com/ashley.baldwinhunter"><img class="icon" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ64Er0HwlJqNAhgmaWnu3JOylUDFqd6Jy7FV1U-l4vH5qHnbyu">Facebook</a></li>
+      </ul>
+    </div>
+
+  </body>
+</html>
