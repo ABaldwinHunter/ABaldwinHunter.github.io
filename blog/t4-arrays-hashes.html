@@ -1,38 +1,47 @@
 <!DOCTYPE html>
 <html>
   <head>
-  	<link type="text/css" rel="stylesheet" href="stylesheets/blog-stylesheet.css"/>
+  	<link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheet.css"/>
   </head>
   <body>
     <img id="sky" src="https://scontent-b-iad.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/10363958_10152205200177761_1841719403353895080_n.jpg?oh=48f74fee470a79ee6acd31f07972e7fa&oe=54C041FB">
     <h1 id="blog-name">The Jolly Spider</h1>
     <img id="portrait" src="https://pbs.twimg.com/profile_images/511033278489317376/sU8Nlnn2_400x400.jpeg"/>
-    <h1 id="Ruby: Arrays vs. Hashes">[New Entry Title]</h1>
-    <h1 id="October 5, 2014">[New Date]</h1>
+    <h1 id="new-title">Ruby: Arrays vs. Hashes</h1>
+    <h1 id="new-date">October 5, 2014</h1>
     <div id="Article">
       <h3>Ruby: Arrays vs. Hashes</h3>
-      <p>So far what I’ve learned:</p>
+      <p>So far what I have learned:</p>
 
       <h3>Arrays</h3>
-      <p>Arrays are little collections of objects, which can be numbers or strings. Or even variables (but the variable will be pointing to the string or number or whatever that it represents). They have indices for their items, which start at 0. (the 0th position). You can do lots of things with arrays, like add them together, sort them, call a method that will tell you how many objects are in the array, etc.</p>
+      <p>Arrays are collections of objects, which can be numbers or "strings" of text in quotations. They can also be variables, (but the variable will be pointing to the string or number that it represents).</p>
+
+      <img src="../blogimgs/myarray.png"/>
+
+        <p>You can do lots of things with arrays, like sort them, count their objects, and add them together:</p>
+
+      <img src="../blogimgs/addingarrays.png"/>
 
       <p>You can even have arrays that have other arrays as objects, kind of like when a parent has kids and then some of the kids have their own. Kind of.</p>
 
-      <p>As far as technical or syntactical things go, arrays are pretty easy to make. In Ruby, you just write the name you’d like to give your array, and then =, then square brackets containing all of your objects, separated by a comma, - like so:</p>
+      <p>As far as technical or syntactical things go, arrays are pretty easy to make. In Ruby, you just write the name you'd like to give your array, and then =, then square brackets containing all of your objects, separated by a comma, - like so:</p>
 
-      <p>list_of_movies = [“The Shining”, “My Cousin Vinny”, “Harold and Maude”, “Ocean’s 11”]</p>
+      <p><code>list_of_movies = ["The Shining", "My Cousin Vinny", "Harold and Maude", "Ocean's 11"]</code></p>
 
-      <p>Note that these objects are all strings and so appear in “”. Also note that the commas are outside of the string.</p>
+      <p>Note that these objects are all strings and so appear in "". Also note that the commas are outside of the string.</p>
 
       <p>One more array:</p>
 
-      <p>numbers = [1, 4, 5, 39, 1, 0, -5]</p>
-      <p>This array has 7 objects, all numbers. It doesn’t matter that some are negative or that others repeat.</p>
-      <p>Arrays all have an ‘index’ which basically is just that the order of these items matters to them. If I call </p>
+      <p><code>numbers = [1, 4, 5, 39, 1, 0, -5]</code></p>
+    
+      <p>This array has 7 objects, all numbers. It doesn't matter that some are negative or that others repeat.</p>
+      <p>Arrays all have an 'index' which basically is just that the order of these items matters to them. If I call </p>
 
-      <p>Numbers[0]</p>
+      <p><code>numbers[0]</code></p>
 
-      <p>It will return to me 1, which is in the 0th position. (Computers and mathematicians apparently begin counting at 0, not 1, kind of like buildings in European countries. Time for Americans to cross over and also switch to the metric system while we’re at it. ☺)</p>
+      <p>It will return to me 1, which is in the 0th position. (Computers and mathematicians apparently begin counting at 0, not 1, kind of like buildings in European countries. Time for Americans to cross over and also switch to the metric system while we're at it. :))</p>
+
+       <img src="../blogimgs/arrayindex2.png"/> 
 
       <h3>Hashes</h3>
 
@@ -40,17 +49,26 @@
       <p>Hashes are like arrays, except that instead of having a numerical index of 0, 1, 2, 3, 4 … n for their objects, they can have other things be index keys.</p>
       <p>This is useful for storing information. For instance, in our movie example above, we could write a hash that used movies as the index keys, and directors as the object. So we would get:</p>
 
-      <p>Movie_hash = {
-            <br>“The Shining” => “Stephen King”,</br>
-            <br>“My Cousin Vinny” =>  “”,</br>
-            <br>“Harold and Maude” => “”,</br>
-            <br>“Ocean’s 11” => “”</br>
-            }</p>
+      <p><code>movie_hash = {</br>
+            <br>"The Shining" => "Stanley Kubrick",</br>
+            <br>"My Cousin Vinny" =>  "Jonathan Lynn",</br>
+            <br>"Harold and Maude" => "Hal Ashby",</br>
+            <br>"Ocean's 11” => "Steven Soderbergh"</br>
+            }</code></p>
   
-    <p>Notice where all of the commas and curly brackets are. These matter to Ruby. There are a couple of other ways to write new hashes, and there are different ways to add new key-value pairs.</p>
-    <p>But this is the basic idea. Now, when I call movie_hash(“The Shining”), I will get:</p> 
+    <p>Notice where all of the commas and curly brackets are? These matter to Ruby. There are a couple of other ways to write new hashes, and there are different ways to add new key-value pairs.</p>
+    <p>But this is the basic idea. Now, when I call movie_hash("The Shining"), I will get:</p> 
 
-    <p>“Stephen King” returned to me.</p> 
+    <p>"Stephen King" returned to me.</p> 
+
+    <p> That is one way to make a hash. You can also do it a few other ways, including the 'literal' way, where you just say:</p> 
+    <p><code>my_pet_hash = {"Tweety" => "bird", "Spot" => "dog", "Whiskers" => "cat"}</code></p>
+    <p>One cool thing about hashes is that you can use Ruby's .each method to do a series of actions on (or iterate over) the keys and values, treating them differently. For instance, I could say:</p>
+
+     <img src="../blogimgs/hasheach.png"/> 
+
+     <p>And that's all for now. My knowledge is only incipient:) Thanks for reading and I hope you found something useful!</p>
+
     </div>
     
     <div id="contact_links">
