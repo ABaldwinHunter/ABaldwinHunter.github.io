@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheet.css"/>
+  </head>
+  <body>
+    <img id="sky" src="https://scontent-b-iad.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/10363958_10152205200177761_1841719403353895080_n.jpg?oh=48f74fee470a79ee6acd31f07972e7fa&oe=54C041FB"/>
+    <h1 id="blog-name">The Jolly Spider</h1>
+    <img id="portrait" src="https://pbs.twimg.com/profile_images/511033278489317376/sU8Nlnn2_400x400.jpeg"/>
+    <h1 id="new-title">Ruby Hashes vs. JavaScript Objects</h1>
+    <h1 id="new-date">November 2, 2014</h1>
+    <div id="Article">
+      <p>This week at DBC we learned about the basics of JavaScript, including an intro to variables, functions and syntax. JavaScript has seemed pretty similar to Ruby so far with several important differences - a bit like going from Italian to Spanish.</p>
+      <p>It's also a bit like an episode of Recess in which the kids wind up in an adjacent school,
+        which contains dopplegangers of all of the characters. For instance, instead of the Ashleys,
+        the popular clique of girls on the playground is called the Brittanys. They are a little different, but serve basically the same function.</p>
+        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQc_ZRLONclX5Yxz5uq2vyTI7ZUGAa5GAUusQHxC-8vraq4ZwLOlw"/>
+      <h3>Ruby Hashes vs. JavaScript Objects: the scoop</h3>
+      <p>In Ruby, we saw that we could use a special collection of key-value pairs to store information
+        between curly brackets. This set was an object type called a hash. Unlike arrays, hashes in Ruby
+        don't really have an internal order of keys, and instead we can basically access any key-value pair by referring directly the key, as so:</p>
+      <img src="../blogimgs/hash_key.png"/>
+      <p>JavaScript has arrays but it doesn't have hashes <em>per se</em>. But, it has object variables that can behave very similarly. Here's an example:</p>
+      <img src="../blogimgs/javaexample.png"/>
+      <p><code>name</code>, <code>favColor</code>, and <code>eyeColor</code> are called <em>properties</em> of the object <code>ashley</code>. What do they remind you of in hashes?</p>
+      <p>Yep! Keys. Each property in the JavaScript object functions in basically the same way as a key
+        in the Ruby hash, letting you access the information value attached. Whereas values are accessed from Ruby hashes using square brackets - <code>my_hash[key]</code> - values are accessed from JS objects by asking <code>myObject.myProperty</code>.</p>
+      <h3>Adding items to a hash in Ruby</h3>
+      <p>In a Ruby hash, you can add key-value pairs in a few ways, including:</p>
+      <img src="../blogimgs/adding_to_hash.png"/>
+      <h3>Adding properties to an Object in JS</h3>
+      In contrast, to add properties to a JavaScript object, you simply enter <code>myObject.newProperty = newValue</code>. For instance:</p>
+      <img src="../blogimgs/addingjs.png"/>
+      <p>You can also delete items from both Ruby hashes and JS objects. To delete a key-value pair from a hash in Ruby, you would say <code>my_hash.delete(key)</code>. In JS, you can eliminate a property from an object by going: <code>delete ashley.favFood</code>.
+      <h3>Multiple layers and nesting</h3>
+      <p>Finally, remember how in Ruby hashes could have values that were also hashes themselves? Or an array? Well, JavaScript objects can have properties that have 'properties' of their own. That is, the <code>favFoods</code> property of <code>ashley</code> could be an object that contains various foods:</p>
+      <img src="../blogimgs/propertiesjs2.png"/>
+      <p>See where it printed "fried icecream" on the upper right? That was because we asked the object for the breakfast property of japaneseCuisine, which was the value of the favFood property of ashley. That is: ashley.favFood.breakfast = "fried icecream".</p>
+      <p>So that was a recap of some of the basic differences between manipulating information with Ruby hashes and JavaScript objects. Which is more useful? I am still working on a larger level picture and will give updates, but I imagine it will depend upon what we'd like to do. Thanks for reading and I hope you found something useful!</p>
+    </div>
+    
+    <div id="contact_links">
+      <h3 class="center"><a href="#">About</></h3>          
+      <ul>
+        <li><a href="https://www.linkedin.com/profile/view?id=154112059&trk=nav_responsive_tab_profile_pic"><img class="icon" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzi7PuXbJ0QzHbG6hnuXC7Bj9NEDxTXOOj0xyoylFz8tElaL_5Y_PCdA"/>Linked In</a></li>
+        <li><a href="https://twitter.com/a_baldwinhunter"><img class="icon" src="https://pbs.twimg.com/profile_images/2284174758/v65oai7fxn47qv9nectx_400x400.png"/>Twitter</a></li>
+        <li><a href="https://github.com/ABaldwinHunter"><img class="icon" src="http://romnes.github.io/images/github.png"/>GitHub</a></li>
+        <li><a href="https://www.facebook.com/ashley.baldwinhunter"><img class="icon" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ64Er0HwlJqNAhgmaWnu3JOylUDFqd6Jy7FV1U-l4vH5qHnbyu">Facebook</a></li>
+      </ul>
+    </div>
+
+  </body>
+</html>
