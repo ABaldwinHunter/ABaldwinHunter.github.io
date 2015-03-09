@@ -1,4 +1,14 @@
-html {
+.icon {
+  height: 5em;
+  width: 5em;
+}
+
+#portrait {
+  height: 8em;
+  width: 8em;
+}
+
+/*html {
   background-color: #0099ff;
 }
 
@@ -91,7 +101,7 @@ h3 .center {
   float: center;
   }
 
-#footer { 
+#footer {
   width: 99%;
   height: 80px;
   top: 140px;
@@ -126,3 +136,4 @@ h3 .center {
   color: white;
 }
 
+*/
