@@ -18,11 +18,12 @@
 }
 
 #blog-posts {
+  margin-top: 50px;
   margin-left: 200px;
   font-size: 1.6em;
   font-family: 'Open Sans', sans-serif;
   font-style: bold;
-  float: right;
+  float: left;
 }
 
 a:hover {
@@ -30,11 +31,6 @@ a:hover {
   text-decoration: none;
 }
 
-body {
-  background-image: url("https://ABaldwinHunter.github.io/blogimgs/portrait.jpg");
-  background-repeat: no-repeat;
-  background-color: #FFCC99;
-}
 
 /*.container {
   opacity: 0.4;
