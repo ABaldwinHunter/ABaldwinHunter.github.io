@@ -4,8 +4,13 @@
 }
 
 #portrait {
-  height: 18em;
-  width: 12em;
+  height: 28em;
+  width: 20em;
+  margin-right: 30px;
+}
+
+.left {
+  float: left;
 }
 
 /*html {
