@@ -3,6 +3,12 @@
   width: 5em;
 }
 
+#icons {
+  float: left;
+  margin-top: 200px;
+  margin-left: 30px;
+}
+
 #portrait {
   height: 28em;
   width: 20em;
@@ -13,138 +19,62 @@
   float: left;
 }
 
-#blog-posts {
-  margin-left: 200px;
-  font-size: 1.4em;
-  font-family: 'Open Sans', sans-serif;
+.right {
+  float: right;
+  margin-right: 100px;
+  text-align: center;
 }
 
-/*html {
-  background-color: #0099ff;
+/*a:hover {
+  color: #A503BC;
+  text-decoration: none;
 }
-
-p {
-  text-indent: 25px;
+*/
+a {
+  /* First we need to help some browsers along for this to work.
+     Just because a vendor prefix is there, doesn't mean it will
+     work in a browser made by that vendor either, it's just for
+     future-proofing purposes I guess. */
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* ...and now for the proper property */
+  transition:.4s;
 }
-
-
 a:hover {
-  color: violet;
-}
-
-h1 {
-  font-size: 40px;
-  text-align: center;
-  font-family: Times, serif;
-  color: black;
-  position: absolute;
-  top: 75px;
-  width: 100%;
-  border-bottom: 2px solid blue;
-  border-top: 2px solid blue;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-
-
-#portrait {
-  position: absolute;
-  top: 250px;
-  left: 95px;
-  height: 200px;
-  width:  200px;
-
-}
-
-#site-name {
-  position: absolute;
-  top: 40px;
-  left: 45px;
-  color: black;
-}
-
-#sky {
-  position: fixed;
-  top: 0px
-  right: 5px;
-  width: 98.5%;
-  margin: 1px;
-}
-
-h3 .center {
-  text-align: center;
-  padding-bottom: 5px;
-  color: #8e35ef;
-}
-
-#contact_links {
-  float: left;
-  height: 200px;
-  width 60px;
-  position: absolute;
-  top: 530px;
-  left: 95px;
-}
-
-.icon {
-  height: 40px;
-  width: 40px;
-  margin: 0px;
-}
-
-#header {
-  position: absolute;
-  width: 100%;
-  height: 65px;
-  top: 140px;
-  text-align: center;
-}
-
-.header {
-  width: 200px;
-  font-size: 25px;
-  display: inline-block;
-  background-color: #485142;
-  height: 50px;
-  padding-bottom: 10px;
-  border: 3px solid blue;
-  float: center;
-  }
-
-#footer {
-  width: 99%;
-  height: 80px;
-  top: 140px;
-  text-align: center;
-  background-color: #6666cc;
-  position: absolute;
-  top: 1000px;
-  border-bottom-right-radius: 2px solid black;
-  z-index: 1000;
-  left: 15px;
-}
-
-#blog-posts {
-  position: absolute;
-  top: 300px;
-  left: 550px;
-  width: 400px;
-  height: 700px;
-  margin: 40px;
-}
-
-.new-post {
-  font-size: 30px;
-  color: blue;
-  margin-bottom: 40px;
+  color:#A503BC;
   text-decoration: none;
 }
 
-
-#contacts {
-  font-size: 20px;
-  color: white;
+body {
+  background-color: #FFCC99;
+  background-image: url("https://ABaldwinHunter.github.io/blogimgs/portrait.jpg");
+  background-repeat: no-repeat;
 }
 
-*/
+p {
+  font-size: 1.5em;
+}
+
+#transparent {
+  opacity: 0.4;
+  float: right;
+}
+
+.row {
+  float: right;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+#faded {
+  background-color: white;
+  opacity: 0.4;
+  padding: 2em;
+  padding-left: 3.5em;
+  padding-right: 3.5em;
+  border-radius: 4%;
+}
