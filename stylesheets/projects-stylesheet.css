@@ -1,0 +1,32 @@
+.icon {
+  height: 5em;
+  width: 5em;
+}
+
+#icons {
+  float: right;
+}
+
+#portrait {
+  height: 28em;
+  width: 20em;
+  margin-right: 30px;
+}
+
+.left {
+  float: left;
+}
+
+#blog-posts {
+  margin-left: 200px;
+  font-size: 1.6em;
+  font-family: 'Open Sans', sans-serif;
+  font-style: bold;
+  float: right;
+}
+
+a:hover {
+  color: #A503BC;
+  text-decoration: none;
+}
+
