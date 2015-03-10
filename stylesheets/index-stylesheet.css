@@ -25,23 +25,16 @@
   text-align: center;
 }
 
-/*a:hover {
-  color: #A503BC;
-  text-decoration: none;
-}
-*/
-a {
-  /* First we need to help some browsers along for this to work.
-     Just because a vendor prefix is there, doesn't mean it will
-     work in a browser made by that vendor either, it's just for
-     future-proofing purposes I guess. */
+
+/*a {
   -o-transition:.5s;
   -ms-transition:.5s;
   -moz-transition:.5s;
   -webkit-transition:.5s;
-  /* ...and now for the proper property */
-  transition:.4s;
+  /* ...and now for the proper property
+  transition:.s;
 }
+*/
 a:hover {
   color:#A503BC;
   text-decoration: none;
@@ -51,6 +44,10 @@ body {
   background-color: #FFCC99;
   background-image: url("https://ABaldwinHunter.github.io/blogimgs/portrait.jpg");
   background-repeat: no-repeat;
+}
+
+#fly {
+  float: right;
 }
 
 p {
