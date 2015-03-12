@@ -1,6 +1,7 @@
 .icon {
   height: 5em;
   width: 5em;
+  color: #A503BC;
 }
 
 #portrait {
@@ -11,4 +12,9 @@
 
 .left {
   float: left;
+}
+
+a:hover {
+  color:#A503BC;
+  text-decoration: none;
 }
