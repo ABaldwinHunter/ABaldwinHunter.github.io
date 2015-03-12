@@ -4,9 +4,6 @@
   	<link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheet.css"/>
   </head>
   <body>
-    <img id="sky" src="https://scontent-b-iad.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/10363958_10152205200177761_1841719403353895080_n.jpg?oh=48f74fee470a79ee6acd31f07972e7fa&oe=54C041FB">
-    <h1 id="blog-name">The Jolly Spider</h1>
-    <img id="portrait" src="https://pbs.twimg.com/profile_images/511033278489317376/sU8Nlnn2_400x400.jpeg"/>
     <h1 id="new-title">Ruby: Arrays vs. Hashes</h1>
     <h1 id="new-date">October 5, 2014</h1>
     <div id="Article">
@@ -33,7 +30,7 @@
       <p>One more array:</p>
 
       <p><code>numbers = [1, 4, 5, 39, 1, 0, -5]</code></p>
-    
+
       <p>This array has 7 objects, all numbers. It doesn't matter that some are negative or that others repeat.</p>
       <p>Arrays all have an 'index' which basically is just that the order of these items matters to them. If I call </p>
 
@@ -41,11 +38,11 @@
 
       <p>It will return to me 1, which is in the 0th position. (Computers and mathematicians apparently begin counting at 0, not 1, kind of like buildings in European countries. Time for Americans to cross over and also switch to the metric system while we're at it. :))</p>
 
-       <img src="../blogimgs/arrayindex2.png"/> 
+       <img src="../blogimgs/arrayindex2.png"/>
 
       <h3>Hashes</h3>
 
-      <p>So, then we have these very similar things called hashes.</p>  
+      <p>So, then we have these very similar things called hashes.</p>
       <p>Hashes are like arrays, except that instead of having a numerical index of 0, 1, 2, 3, 4 … n for their objects, they can have other things be index keys.</p>
       <p>This is useful for storing information. For instance, in our movie example above, we could write a hash that used movies as the index keys, and directors as the object. So we would get:</p>
 
@@ -55,31 +52,20 @@
             <br>"Harold and Maude" => "Hal Ashby",</br>
             <br>"Ocean's 11” => "Steven Soderbergh"</br>
             }</code></p>
-  
+
     <p>Notice where all of the commas and curly brackets are? These matter to Ruby. There are a couple of other ways to write new hashes, and there are different ways to add new key-value pairs.</p>
-    <p>But this is the basic idea. Now, when I call movie_hash("The Shining"), I will get:</p> 
+    <p>But this is the basic idea. Now, when I call movie_hash("The Shining"), I will get:</p>
 
-    <p>"Stephen King" returned to me.</p> 
+    <p>"Stephen King" returned to me.</p>
 
-    <p> That is one way to make a hash. You can also do it a few other ways, including the 'literal' way, where you just say:</p> 
+    <p> That is one way to make a hash. You can also do it a few other ways, including the 'literal' way, where you just say:</p>
     <p><code>my_pet_hash = {"Tweety" => "bird", "Spot" => "dog", "Whiskers" => "cat"}</code></p>
     <p>One cool thing about hashes is that you can use Ruby's .each method to do a series of actions on (or iterate over) the keys and values, treating them differently. For instance, I could say:</p>
 
-     <img src="../blogimgs/hasheach.png"/> 
+     <img src="../blogimgs/hasheach.png"/>
 
      <p>And that's all for now. My knowledge is only incipient:) Thanks for reading and I hope you found something useful!</p>
 
     </div>
-    
-    <div id="contact_links">
-      <h3 class="center"><a href="#">About</></h3>          
-      <ul>
-        <li><a href="https://www.linkedin.com/profile/view?id=154112059&trk=nav_responsive_tab_profile_pic"><img class="icon" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzi7PuXbJ0QzHbG6hnuXC7Bj9NEDxTXOOj0xyoylFz8tElaL_5Y_PCdA"/>Linked In</a></li>
-        <li><a href="https://twitter.com/a_baldwinhunter"><img class="icon" src="https://pbs.twimg.com/profile_images/2284174758/v65oai7fxn47qv9nectx_400x400.png"/>Twitter</a></li>
-        <li><a href="https://github.com/ABaldwinHunter"><img class="icon" src="http://romnes.github.io/images/github.png"/>GitHub</a></li>
-        <li><a href="https://www.facebook.com/ashley.baldwinhunter"><img class="icon" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ64Er0HwlJqNAhgmaWnu3JOylUDFqd6Jy7FV1U-l4vH5qHnbyu">Facebook</a></li>
-      </ul>
-    </div>
-
   </body>
 </html>

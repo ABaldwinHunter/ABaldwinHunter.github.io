@@ -4,9 +4,7 @@
   	<link type="text/css" rel="stylesheet" href="../stylesheets/cheatsheet-stylesheet.css"/>
   </head>
   <body>
-    <img id="sky" src="https://scontent-b-iad.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/10363958_10152205200177761_1841719403353895080_n.jpg?oh=48f74fee470a79ee6acd31f07972e7fa&oe=54C041FB"/>
     <h1 id="blog-name">CHEAT SHEET: Ruby Arrays and Hashes</h1>
-    <img id="portrait" src="https://pbs.twimg.com/profile_images/511033278489317376/sU8Nlnn2_400x400.jpeg"/>
     <h1 id="new-title">Everything you ever wanted to know but were too afraid to ask...</h1>
     <h1 id="new-date">November 8, 2014</h1>
     <div id="Article">
@@ -20,54 +18,54 @@
         </tr>
         <tr>
           <td>Make a new hash: hash declaration</td>
-          <td>Implicit form</td> 
+          <td>Implicit form</td>
           <td>heights = { "Bam bam" => 50, "Barney Rubble" => 72}</td>
         </tr>
          <tr>
           <td>Another way to make a hash!</td>
-          <td>Hash.new Method</td> 
+          <td>Hash.new Method</td>
           <td><p>heights = Hash.new</p>
            <p>heights["Fred Flintstone"] = 75</p></td>
         </tr>
          <tr>
           <td>Modifying hashes</td>
-          <td></td> 
+          <td></td>
           <td>my_hash[new_key]= new_value</td>
         </tr>
           <tr>
           <td>Deleting key-value pair</td>
-          <td></td> 
+          <td></td>
           <td>hash.delete_if {|key, value| ...}</td>
         </tr>
            <tr>
           <td>Basic way to delete a key</td>
-          <td></td> 
+          <td></td>
           <td>hash.delete[key]</td>
         </tr>
          <tr>
           <td>accessing key-value pairs</td>
-          <td></td> 
+          <td></td>
           <td>hash[key]</td>
         </tr>
          <tr>
           <td>checking for key</td>
-          <td></td> 
+          <td></td>
           <td>my_hash.has_key?()</td>
         </tr>
          <tr>
           <td>checking for value</td>
-          <td></td> 
+          <td></td>
           <td>my_hash.has_value?()</td>
         </tr>
         <tr>
           <td>combine hashes</td>
-          <td></td> 
+          <td></td>
           <td><p>{a=> "Apple", b => "Banana"}.merge{c=> "Carrot", d => "Dill"} =></p>
             <p>{a=> "Apple", b => "Banana", c=> "Carrot", d => "Dill"}</p></td>
         </tr>
         <tr>
           <td>itereating through a hash</td>
-          <td>.each</td> 
+          <td>.each</td>
           <td><p>my_hash.each do |key, value|</p>
             <p>code ...</p>
             <p>end</p>
@@ -77,12 +75,12 @@
         </tr>
         <tr>
           <td>itereating through a hash</td>
-          <td></td> 
+          <td></td>
           <td>my_hash.each_key { |k| ...}</td>
         </tr>
         <tr>
           <td>itereating through a hash</td>
-          <td></td> 
+          <td></td>
           <td>my_hash.each_value { |v| ...} </td>
         </tr>
         </table>
@@ -97,29 +95,29 @@
         </tr>
         <tr>
           <td>How to make an array</td>
-          <td>Array.new method</td> 
+          <td>Array.new method</td>
           <td>ice_cream = Array.new[4] => results in an array with four elements, all nil</td>
         </tr>
          <tr>
           <td>Another way to make an array</td>
-          <td>Literal method</td> 
+          <td>Literal method</td>
           <td>ice_cream = ["vanilla", "chocolate", "pistachio", "peppermint"]</td>
         </tr>
          <tr>
           <td>Checking for length</td>
-          <td></td> 
+          <td></td>
           <td>my_array.length</td>
         </tr>
         </tr>
          <tr>
           <td>joining array into a string</td>
-          <td>.join</td> 
+          <td>.join</td>
           <td>["Hello", "my", "dear", "friend"].join(" ",!) => "Hello my dear friend!"</td>
         </tr>
         </tr>
          <tr>
           <td>Checking for length</td>
-          <td></td> 
+          <td></td>
           <td>my_array.length</td>
         </tr>
         </table>
@@ -133,17 +131,17 @@
         <tr>
           <td>Strings are objects in Ruby that consist of a string of characters. As in many
             languages, Ruby lets you do interesting things with them!</td>
-          <td>Making a new string</td> 
+          <td>Making a new string</td>
           <td>greeting = "Good night and good luck!"</td>
         </tr>
          <tr>
           <td></td>
-          <td>string.reverse</td> 
+          <td>string.reverse</td>
           <td>"Good night and good luck!".reverse = "!kcul doog dna thgin dooG"</td>
         </tr>
          <tr>
           <td>Combining strings</td>
-          <td>concatenate</td> 
+          <td>concatenate</td>
           <td>"My " + "best friend Charlie" + " loves chicken nuggets." = "My best friend Charlie loves chicken nuggets."</td>
         </tr>
         <tr>
@@ -151,13 +149,13 @@
           <td><p>split("")</p>
             <p>(Note that you can add a character to the .split argument and it will cut the string
               at the points where it encounters the character. In the example to the right, we
-              use a space)</td> 
+              use a space)</td>
           <td>"Hello darling, your blue wig looks awesome today!".split(" ") => ["Hello", "darling,", "your", "blue", "wig", "looks", "awesome", "today!"]</td>
         </tr>
         </table>
       </div>
     <div id="contact_links">
-      <h3 class="center"><a href="#">About</></h3>          
+      <h3 class="center"><a href="#">About</></h3>
       <ul>
         <li><a href="https://www.linkedin.com/profile/view?id=154112059&trk=nav_responsive_tab_profile_pic"><img class="icon" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzi7PuXbJ0QzHbG6hnuXC7Bj9NEDxTXOOj0xyoylFz8tElaL_5Y_PCdA"/>Linked In</a></li>
         <li><a href="https://twitter.com/a_baldwinhunter"><img class="icon" src="https://pbs.twimg.com/profile_images/2284174758/v65oai7fxn47qv9nectx_400x400.png"/>Twitter</a></li>
