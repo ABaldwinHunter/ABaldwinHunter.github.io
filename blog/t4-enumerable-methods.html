@@ -12,6 +12,7 @@
   	<link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheet.css"/>
   </head>
   <body>
+    <div class="container">
     <h1 id="new-title">#Map: a Method in Ruby's Enumerable Module</h1>
     <h1 id="new-date">October 12, 2014</h1>
     <div id="Article">
@@ -33,6 +34,7 @@
     <p>How is map different from other methods? First, it does not change the original array. If you want it to do that, you can use its bang <code>!</code> counterpart: <code>map!</code> . In contrast, <code>.each</code> will iterate over the elements of an array or hash, doing something at each one (like printing it or printing an altered version of it - <code>[1,2,3,4,5].each {|x| print x+2} #=> 34567</code> - but it will not return those items in any array whatsoever. It also does not modify the original. So it's a sand castle operation: the glorious output is there, but washed away at the end of the day when the tide comes in.</p> <img src="http://www.lovethispic.com/uploaded_images/21677-Sand-Castle.jpg"/>
     <p>I have also heard that there is a .collect method that does basically the same thing as map: performs a transformation and then collects the newly created elements in a new array. I prefer the name <code>map</code>, because it makes me picture a little transformative action being applied over the existing element, like adding a new cologne, or pair of sunglasses to the way you see the world.</p>
     <p>That's all for now. Hope you found something useful. Go try it out! You can use irb or <a href="http://labs.codecademy.com/#:workspace">Code Academy Labs</a> (free).</p>
+    </div>
     </div>
   </body>
 </html>
