@@ -4,6 +4,10 @@
   color: #A503BC;
 }
 
+#icon {
+  margin-left: 70px;
+}
+
 #portrait {
   height: 28em;
   width: 20em;
