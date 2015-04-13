@@ -38,3 +38,9 @@ a:hover {
 .dropdown:hover .dropdown-menu {
     display: block;
 }
+
+.project {
+  height: 380px;
+  border: 2px solid gray;
+  margin-top: 40px;
+}
